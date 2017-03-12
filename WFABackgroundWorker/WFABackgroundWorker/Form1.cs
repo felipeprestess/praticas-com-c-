@@ -41,7 +41,7 @@ namespace WFABackgroundWorker
                 backgroundWorker.ReportProgress(i);
 
                 if (backgroundWorker.CancellationPending)
-                {
+                { 
                     Console.WriteLine("Cancelled");
                     break;
                 }
@@ -78,7 +78,7 @@ namespace WFABackgroundWorker
             else
             {
                 btnCancel.Enabled = true;
-                backgroundWorker.RunWorkerAsync(new Guy("Felipe", 22, 150));
+                backgroundWorker.RunWorkerAsync(/*new Guy("Felipe", 22, 150)*/);
                 //Saída no console
             }
         }
